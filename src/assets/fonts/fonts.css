@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "khula";
+	src: url("./khula.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "lora";
+	src: url("./lora.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "regards";
+	src: url("./regards.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}

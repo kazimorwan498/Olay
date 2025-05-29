@@ -128,7 +128,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+<!-- ## 📁 Project Structure
 
 ```tree
 my-app/
@@ -140,7 +140,7 @@ my-app/
 ├── tailwind.config.js
 ├── package.json
 └── vite.config.js
-```
+``` -->
 
 ---
 
