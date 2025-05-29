@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin '../hero.ts';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-khula: "khula", sans-serif;
+	--font-lora: "lora", serif;
+	--font-regards: "regards", sans-serif;
+}
+
+@layer base {
+	* {
+		@apply font-khula;
+	}
+}
