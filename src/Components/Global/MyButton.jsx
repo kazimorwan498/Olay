@@ -3,7 +3,7 @@ import React from "react";
 
 const MyButton = ({ classNameDiv, className, children }) => {
 	return (
-		<div className="relative">
+		<div className="relative max-h-12">
 			<div
 				className={cn(
 					"absolute inset-0 bg-white rounded-full translate-[1px]",
@@ -12,7 +12,7 @@ const MyButton = ({ classNameDiv, className, children }) => {
 			/>
 			<Button
 				className={cn(
-					"bg-black text-white font-medium px-[43px] py-[16px] rounded-full active:translate-[1px] transition-transform ease-in-out",
+					"bg-black text-white font-medium px-[51px] py-6 text-lg rounded-full active:translate-[1px] transition-transform ease-in-out",
 					className
 				)}
 				data-pressed="false"
