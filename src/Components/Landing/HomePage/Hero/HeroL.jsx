@@ -3,7 +3,7 @@ import MyButton from "../../../Global/MyButton";
 
 const HeroL = () => {
 	return (
-		<section className="pt-[222px] ps-[99px] pb-[124px]">
+		<section className="pt-[222px] ps-[99px] pb-[127px] w-1/2">
 			<h1 className="text-[50px] leading-[64px] text-white font-bold font-lora max-w-[570px] tracking-[0.6px]">
 				Plump, Firm, and Radiant Skin in One Jar
 			</h1>
