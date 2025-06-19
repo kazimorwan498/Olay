@@ -6,13 +6,17 @@ import MyButton from "./MyButton";
 
 const MyNavbar = () => {
 	return (
-		<section className="bg-[#78040f]">
-			<Navbar
-				className="absolute top-0 inset-x-0 backdrop-blur-none backdrop-saturate-100 bg-transparent py-[7px] !max-w-[1206px] mx-auto"
-				maxWidth="2xl"
-			>
+		<Navbar
+			className="backdrop-saturate-100 bg-transparent py-[7px]"
+			maxWidth="2xl"
+		>
+			<NavbarContent className=" !max-w-[1206px] mx-auto">
 				<NavbarBrand>
-					<img className="h-[55px]" src="/logo.png" alt="logo" />
+					<img
+						className="h-[55px]"
+						src="src/assets/img/logo.png"
+						alt="logo"
+					/>
 				</NavbarBrand>
 				<NavbarContent
 					className="hidden sm:flex gap-[28px]"
@@ -28,11 +32,11 @@ const MyNavbar = () => {
 				</NavbarContent>
 				<NavbarContent justify="end">
 					<NavbarItem>
-						<MyButton>Log In</MyButton>
+						<MyButton url="/login">Log In</MyButton>
 					</NavbarItem>
 				</NavbarContent>
-			</Navbar>
-		</section>
+			</NavbarContent>
+		</Navbar>
 	);
 };
 

@@ -3,7 +3,7 @@ import MyButton from "../../../Global/MyButton";
 
 const HeroL = () => {
 	return (
-		<section className="pt-[222px] ps-[99px] pb-[127px] w-1/2">
+		<section className="pt-[222px] ps-[99px] pb-[127px] w-full">
 			<h1 className="text-[50px] leading-[64px] text-white font-bold font-lora max-w-[570px] tracking-[0.6px]">
 				Plump, Firm, and Radiant Skin in One Jar
 			</h1>
@@ -14,10 +14,11 @@ const HeroL = () => {
 			</p>
 
 			<div className="flex gap-3 mt-[33px]">
-				<MyButton>Shop Now</MyButton>
+				<MyButton url="/shop-now">Shop Now</MyButton>
 				<MyButton
-					className="bg-white text-black active:translate-0 border-2"
+					className="bg-white text-black active:translate-0 border-2 MyButton3"
 					classNameDiv="hidden"
+					url="/learn-more"
 				>
 					Learn More
 				</MyButton>
