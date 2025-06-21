@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/react";
 import { Link } from "react-router-dom";
 import navLinkItems from "../../db/dbExport";
-import MyButton from "./MyButton";
+import MyButton from "./Header/MyButton";
 
 const MyNavbar = () => {
 	return (

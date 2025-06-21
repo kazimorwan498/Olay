@@ -17,9 +17,3 @@
 		@apply font-khula;
 	}
 }
-
-@layer components {
-	/* .MyButton3 {
-		view-transition-name: MyButton;
-	} */
-}

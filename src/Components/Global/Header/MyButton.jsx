@@ -10,7 +10,7 @@ const MyButton = ({ classNameDiv, className, children, url }) => {
 	};
 
 	return (
-		<div className="relative max-h-12">
+		<div className="relative max-h-[40px] lg:max-h-12">
 			<div
 				className={cn(
 					"absolute inset-0 bg-white rounded-full translate-[2px]",
@@ -19,13 +19,13 @@ const MyButton = ({ classNameDiv, className, children, url }) => {
 			/>
 			<Button
 				className={cn(
-					"bg-black text-white font-medium px-[51px] py-6 text-lg rounded-full active:translate-[2px] transition-transform ease-in-out",
+					"bg-black text-white font-medium px-6 sm:px-7 md:px-9 lg:px-[51px] py-5 lg:py-6 text-base sm:text-lg rounded-full active:translate-[2px] transition-transform ease-in-out",
 					className
 				)}
 				data-pressed="false"
 				data-hover="false"
 				variant="solid"
-				onPress={handleUrl}
+				// onPress={handleUrl}
 			>
 				{children}
 			</Button>
