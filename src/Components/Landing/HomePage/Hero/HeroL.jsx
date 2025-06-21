@@ -1,5 +1,5 @@
 import React from "react";
-import MyButton from "../../../Global/Header/MyButton";
+import MyButton from "../../../Global/MyButton";
 
 const HeroL = () => {
 	return (

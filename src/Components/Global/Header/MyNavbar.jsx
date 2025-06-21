@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/react";
 import { Link } from "react-router-dom";
-import navLinkItems from "../../db/dbExport";
-import MyButton from "./Header/MyButton";
+import navLinkItems from "../../../db/dbExport";
+import MyButton from "../MyButton";
 
 const MyNavbar = () => {
+	const [scrolling, setScrolling] = useState(false);
+
+	useEffect(() => {
+		const handleScrolling = () => {
+			setScrolling(window.scrollY > 200);
+		};
+
+		window.addEventListener("scroll", handleScrolling);
+
+		return () => {
+			window.removeEventListener("scroll", handleScrolling);
+		};
+	}, []);
+
 	return (
 		<Navbar
-			className="backdrop-saturate-100 bg-transparent py-[7px]"
+			className={`backdrop-saturate-100 py-[7px] transition-colors-opacity ${
+				scrolling ? "bg-[#4d0000]/50 shadow-md" : "bg-bg-[#4d0000]/0"
+			}`}
 			maxWidth="2xl"
 		>
 			<NavbarContent className=" !max-w-[1206px] mx-auto">
