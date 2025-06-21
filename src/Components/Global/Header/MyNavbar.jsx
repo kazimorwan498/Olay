@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/react";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/img/logo.png";
 import navLinkItems from "../../../db/dbExport";
 import MyButton from "../MyButton";
 
@@ -28,11 +29,7 @@ const MyNavbar = () => {
 		>
 			<NavbarContent className=" !max-w-[1206px] mx-auto">
 				<NavbarBrand>
-					<img
-						className="h-[55px]"
-						src="src/assets/img/logo.png"
-						alt="logo"
-					/>
+					<img className="h-[55px]" src={logo} alt="logo" />
 				</NavbarBrand>
 				<NavbarContent
 					className="hidden sm:flex gap-[28px]"

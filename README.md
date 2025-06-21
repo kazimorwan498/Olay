@@ -1,4 +1,10 @@
-# 🚀 React + Tailwind CSS + HeroUI Setup Guide
+# Olay
+
+## Live Demo
+
+### [Visit us ➡️ ChillsBay](https://olay-kazimorwan498.vercel.app/)
+
+## 🚀 React.js + Tailwind CSS + HeroUI Setup Guide
 
 Set up a modern React project using Vite, Tailwind CSS (v4), and HeroUI (formerly NextUI) – a beautiful, accessible React component library built with Tailwind.
 
@@ -12,7 +18,7 @@ Set up a modern React project using Vite, Tailwind CSS (v4), and HeroUI (formerl
 
 ---
 
-## 1️⃣ Create React + Vite App
+## 1️⃣ Create React App using Vite
 
 ```bash
 npm create vite@latest my-app --template react # Change according to your project name (my-app)
