@@ -29,7 +29,9 @@ const MyNavbar = () => {
 		>
 			<NavbarContent className=" !max-w-[1206px] mx-auto">
 				<NavbarBrand>
-					<img className="h-[55px]" src={logo} alt="logo" />
+					<Link to="/">
+						<img className="h-[55px]" src={logo} alt="logo" />
+					</Link>
 				</NavbarBrand>
 				<NavbarContent
 					className="hidden sm:flex gap-[28px]"

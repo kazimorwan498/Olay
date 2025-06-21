@@ -2,7 +2,13 @@ import { Button, cn } from "@heroui/react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const MyButton = ({ classNameDiv, className, children, url }) => {
+const MyButton = ({
+	classNameDiv,
+	classNameDiv2,
+	className,
+	children,
+	url,
+}) => {
 	const navigate = useNavigate();
 
 	const handleUrl = () => {
@@ -10,11 +16,11 @@ const MyButton = ({ classNameDiv, className, children, url }) => {
 	};
 
 	return (
-		<div className="relative max-h-[40px] lg:max-h-12">
+		<div className={cn("relative max-h-[40px] lg:max-h-12", classNameDiv)}>
 			<div
 				className={cn(
 					"absolute inset-0 bg-white rounded-full translate-[2px]",
-					classNameDiv
+					classNameDiv2
 				)}
 			/>
 			<Button

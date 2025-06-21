@@ -18,8 +18,8 @@ const HeroL = () => {
 					Shop Now
 				</MyButton>
 				<MyButton
-					className="bg-white text-black active:translate-0 border-2 px-7"
-					classNameDiv="hidden"
+					className="bg-white text-black active:translate-0 border-2 px-7 active:scale-95"
+					classNameDiv2="hidden"
 					url="/learn"
 				>
 					Learn More
