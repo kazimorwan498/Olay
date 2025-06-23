@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/react";
+import {
+	Navbar,
+	NavbarBrand,
+	NavbarContent,
+	NavbarItem,
+	NavbarMenuToggle,
+	useDisclosure,
+} from "@heroui/react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/img/logo.png";
 import navLinkItems from "../../../db/dbExport";
 import MyButton from "../MyButton";
+import NavDrawer from "./NavDrawer";
+import Hamburger from "../Icons/Hamburger.jsx";
+import XMark from "../Icons/XMark.jsx";
 
 const MyNavbar = () => {
 	const [scrolling, setScrolling] = useState(false);
@@ -20,6 +30,9 @@ const MyNavbar = () => {
 		};
 	}, []);
 
+	const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+
 	return (
 		<Navbar
 			className={`backdrop-saturate-100 py-[7px] transition-colors-opacity ${
@@ -27,7 +40,7 @@ const MyNavbar = () => {
 			}`}
 			maxWidth="2xl"
 		>
-			<NavbarContent className=" !max-w-[1206px] mx-auto">
+			<NavbarContent className="!max-w-[1206px] mx-auto">
 				<NavbarBrand>
 					<Link to="/">
 						<img className="h-[55px]" src={logo} alt="logo" />
@@ -45,11 +58,19 @@ const MyNavbar = () => {
 						</NavbarItem>
 					))}
 				</NavbarContent>
-				<NavbarContent justify="end">
+				<NavbarContent className="hidden sm:flex" justify="end">
 					<NavbarItem>
 						<MyButton url="/login">Log In</MyButton>
 					</NavbarItem>
 				</NavbarContent>
+			</NavbarContent>
+			<NavbarContent className="sm:hidden" justify="end">
+				<NavbarMenuToggle
+					onClick={onOpen}
+					className="text-white w-10 cursor-pointer"
+					icon={isOpen ? XMark : Hamburger}
+				/>
+				<NavDrawer isOpen={isOpen} onOpenChange={onOpenChange} />
 			</NavbarContent>
 		</Navbar>
 	);

@@ -8,6 +8,7 @@ const MyButton = ({
 	className,
 	children,
 	url,
+	onPress
 }) => {
 	const navigate = useNavigate();
 
@@ -31,7 +32,10 @@ const MyButton = ({
 				data-pressed="false"
 				data-hover="false"
 				variant="solid"
-				// onPress={handleUrl}
+				onPress={() => {
+					if (onPress) onPress();
+					// handleUrl();
+				}}
 			>
 				{children}
 			</Button>

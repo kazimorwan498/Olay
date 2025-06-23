@@ -17,3 +17,9 @@
 		@apply font-khula;
 	}
 }
+
+@layer components {
+	.navDrawer [aria-label="Close"] {
+		@apply !hidden;
+	}
+}

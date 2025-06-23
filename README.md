@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-### [Visit us ➡️ ChillsBay](https://olay-kazimorwan498.vercel.app/)
+### [Visit us ➡️ Olay](https://olay-kazimorwan498.vercel.app/)
 
 ## 🚀 React.js + Tailwind CSS + HeroUI Setup Guide
 
