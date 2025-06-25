@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	Button,
 	Drawer,
@@ -11,6 +11,26 @@ import { Link } from "react-router-dom";
 import MyButton from "../MyButton";
 
 const NavDrawer = ({ isOpen, onOpenChange }) => {
+	useEffect(() => {
+		const handleResize = () => {
+			if (window.innerWidth >= 640) {
+				if (onOpenChange) {
+					onOpenChange(false);
+				}
+			}
+		};
+
+		if (isOpen) {
+			handleResize(); // Run on mount only if open
+		}
+
+		window.addEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+		// Only re-run effect when isOpen or onOpenChange changes
+	}, [isOpen, onOpenChange]);
+
 	return (
 		<>
 			<Drawer
@@ -34,7 +54,7 @@ const NavDrawer = ({ isOpen, onOpenChange }) => {
 									</Link>
 								))}
 							</DrawerBody>
-							<DrawerFooter className="justify-center items-center">
+							<DrawerFooter className="justify-start items-center">
 								<MyButton
 									className="bg-white text-black active:translate-0 border-2 px-7 active:scale-95"
 									classNameDiv2="hidden"
