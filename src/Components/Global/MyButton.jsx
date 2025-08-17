@@ -8,7 +8,8 @@ const MyButton = ({
 	className,
 	children,
 	url,
-	onPress
+	onPress,
+	loadAni,
 }) => {
 	const navigate = useNavigate();
 
@@ -17,7 +18,10 @@ const MyButton = ({
 	};
 
 	return (
-		<div className={cn("relative max-h-[40px] lg:max-h-12", classNameDiv)}>
+		<div
+			className={cn("relative max-h-[40px] lg:max-h-12", classNameDiv)}
+			data-aos={loadAni}
+		>
 			<div
 				className={cn(
 					"absolute inset-0 bg-white rounded-full translate-[2px]",

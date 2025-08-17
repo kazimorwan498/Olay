@@ -10,6 +10,7 @@
 	--font-khula: "khula", sans-serif;
 	--font-lora: "lora", serif;
 	--font-PrimeCast: "PrimeCast", sans-serif;
+	--color-CRed: #78030c;
 }
 
 @layer base {
@@ -22,4 +23,15 @@
 	.navDrawer [aria-label="Close"] {
 		@apply !hidden;
 	}
+	/* .navLoadAni {
+		animation: navLoadAni 0.5s ease;
+	}
+	@keyframes navLoadAni {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	} */
 }

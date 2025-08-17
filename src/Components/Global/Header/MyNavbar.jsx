@@ -24,19 +24,14 @@ const MyNavbar = () => {
 		};
 
 		window.addEventListener("scroll", handleScrolling);
-
-		return () => {
-			window.removeEventListener("scroll", handleScrolling);
-		};
 	}, []);
 
 	const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-
 	return (
 		<Navbar
 			className={`backdrop-saturate-100 py-[7px] transition-colors-opacity ${
-				scrolling ? "bg-[#4d0000]/50 shadow-md" : "bg-bg-[#4d0000]/0"
+				scrolling ? "bg-[#4d0000]/40 shadow-md" : "bg-transparent"
 			}`}
 			maxWidth="2xl"
 		>
