@@ -15,7 +15,7 @@ const Beauty = () => {
 				<Effective style={{ backgroundImage: `url(${effective1})` }} />
 
 				<div className="flex flex-col gap-[27px] items-center justify-center max-w-[939px] mx-auto px-[18px]">
-					<h2 className="font-PrimeCast text-[34px] tracking-[4.3px] leading-[46px]">
+					<h2 className="font-PrimeCast md:text-[30px] 901px:text-[34px] tracking-[4.3px] leading-[46px]">
 						Clean Beauty with Proven Power
 					</h2>
 					<p className="text-[23px] text-center leading-[30px]">

@@ -19,7 +19,10 @@ const MyButton = ({
 
 	return (
 		<div
-			className={cn("relative max-h-[40px] lg:max-h-12", classNameDiv)}
+			className={cn(
+				"relative max-h-[40px] lg:max-h-12",
+				classNameDiv
+			)}
 			data-aos={loadAni}
 		>
 			<div
@@ -30,7 +33,7 @@ const MyButton = ({
 			/>
 			<Button
 				className={cn(
-					"bg-black text-white font-medium px-6 sm:px-7 md:px-9 lg:px-[51px] py-5 lg:py-6 text-base sm:text-lg rounded-full active:translate-[2px] transition-transform ease-in-out",
+					"bg-black text-white font-medium px-6 sm:px-7 md:px-9 lg:px-[51px] py-5 lg:py-6 text-base sm:text-lg rounded-full active:translate-[2px]",
 					className
 				)}
 				data-pressed="false"

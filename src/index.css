@@ -11,6 +11,7 @@
 	--font-lora: "lora", serif;
 	--font-PrimeCast: "PrimeCast", sans-serif;
 	--color-CRed: #78030c;
+	--breakpoint-901px: 901px;
 }
 
 @layer base {
