@@ -24,15 +24,4 @@
 	.navDrawer [aria-label="Close"] {
 		@apply !hidden;
 	}
-	/* .navLoadAni {
-		animation: navLoadAni 0.5s ease;
-	}
-	@keyframes navLoadAni {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	} */
 }

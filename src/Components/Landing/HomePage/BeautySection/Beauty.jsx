@@ -7,18 +7,22 @@ import Effective from "./Effective";
 
 const Beauty = () => {
 	return (
+		// Beauty Section
 		<section
 			className="bg-cover bg-center py-[102px] px-[46px] max-w-[1400px] mx-auto"
 			style={{ backgroundImage: `url(${BeautyBg})` }}
 		>
-			<div className="flex" data-aos="fade-up">
-				<Effective style={{ backgroundImage: `url(${effective1})` }} />
+			<div className="flex" data-aos="fade-up" data-aos-once="false">
+				<Effective
+					className="md:absolute lg:relative"
+					style={{ backgroundImage: `url(${effective1})` }}
+				/>
 
-				<div className="flex flex-col gap-[27px] items-center justify-center max-w-[939px] mx-auto px-[18px]">
+				<div className="flex flex-col gap-[27px] items-center justify-center max-w-[939px] mx-auto px-[18px] z-[1]">
 					<h2 className="font-PrimeCast md:text-[30px] 901px:text-[34px] tracking-[4.3px] leading-[46px]">
 						Clean Beauty with Proven Power
 					</h2>
-					<p className="text-[23px] text-center leading-[30px]">
+					<p className="text-[23px] text-center leading-[30px] md:max-w-[640px] lg:max-w-[903px]">
 						Free from parabens, phthalates, and synthetic dyes
 						because your skin deserves real, honest care. Builds
 						your skin's moisture barrier to help resist daily
@@ -34,7 +38,7 @@ const Beauty = () => {
 				</div>
 
 				<Effective
-					className="rotate-[22deg]"
+					className="rotate-[22deg] md:absolute lg:relative md:right-[46px] lg:right-0 md:bottom-[-113px] lg:bottom-0"
 					classNameP="self-end"
 					style={{ backgroundImage: `url(${effective2})` }}
 				/>
