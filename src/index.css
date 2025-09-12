@@ -12,6 +12,13 @@
 	--font-PrimeCast: "PrimeCast", sans-serif;
 	--color-CRed: #78030c;
 	--breakpoint-901px: 901px;
+	--animate-scroll: scroll 30s linear infinite;
+
+	@keyframes scroll {
+		to {
+			transform: translateX(calc(-100% - 20px));
+		}
+	}
 }
 
 @layer base {
