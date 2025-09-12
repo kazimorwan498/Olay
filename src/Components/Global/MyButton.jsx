@@ -41,7 +41,7 @@ const MyButton = ({
 				variant="solid"
 				onPress={() => {
 					if (onPress) onPress();
-					// handleUrl();
+					handleUrl();
 				}}
 			>
 				{children}
