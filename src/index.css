@@ -11,7 +11,10 @@
 	--font-lora: "lora", serif;
 	--font-PrimeCast: "PrimeCast", sans-serif;
 	--color-CRed: #78030c;
-	--breakpoint-901px: 901px;
+	--color-CRose: #f8e9e6;
+	--breakpoint-xs: 21.875rem;
+	--breakpoint-901px: 56.3125rem;
+	--breakpoint-1160px: 73rem;
 	--animate-scroll: scroll 30s linear infinite;
 
 	@keyframes scroll {
