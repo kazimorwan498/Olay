@@ -1,7 +1,7 @@
-import Hero from './HeroSection/Hero';
-import Beauty from './BeautySection/Beauty';
-import Feature from './Feature';
-import Hydrate from './HydrateSection/Hydrate';
+import Hero from "./HeroSection/Hero";
+import Beauty from "./BeautySection/Beauty";
+import Feature from "./Feature";
+import Hydrate from "./HydrateSection/Hydrate";
 
 const Home = () => {
   return (

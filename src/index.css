@@ -1,5 +1,6 @@
-@import url("https://db.onlinewebfonts.com/c/9190b99bc6c97006796d885cf0a226c4?family=Angeletta+W04+Regular");
-@import "./assets/fonts/fonts.css";
+@import url("https://fonts.cdnfonts.com/css/primecast-free");
+@import url("https://fonts.cdnfonts.com/css/lora");
+@import url("https://fonts.cdnfonts.com/css/khula");
 
 @import "tailwindcss";
 @plugin '../hero.ts';
@@ -7,31 +8,31 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-	--font-khula: "khula", sans-serif;
-	--font-lora: "lora", serif;
-	--font-PrimeCast: "PrimeCast", sans-serif;
-	--color-CRed: #78030c;
-	--color-CRose: #f8e9e6;
-	--breakpoint-xs: 21.875rem;
-	--breakpoint-901px: 56.3125rem;
-	--breakpoint-1160px: 73rem;
-	--animate-scroll: scroll 30s linear infinite;
+  --font-khula: "Khula", sans-serif;
+  --font-lora: "Lora", sans-serif;
+  --font-PrimeCast: "PrimeCast FREE", sans-serif;
+  --color-CRed: #78030c;
+  --color-CRose: #f8e9e6;
+  --breakpoint-xs: 21.875rem;
+  --breakpoint-901px: 56.3125rem;
+  --breakpoint-1160px: 73rem;
+  --animate-scroll: scroll 30s linear infinite;
 
-	@keyframes scroll {
-		to {
-			transform: translateX(calc(-100% - 20px));
-		}
-	}
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
 }
 
 @layer base {
-	* {
-		@apply font-khula;
-	}
+  * {
+    @apply font-khula;
+  }
 }
 
 @layer components {
-	.navDrawer [aria-label="Close"] {
-		@apply !hidden;
-	}
+  .navDrawer [aria-label="Close"] {
+    @apply !hidden;
+  }
 }

@@ -7,7 +7,7 @@ const Hydrate = () => {
       <div
         className="py-7 sm:py-[50px] md:py-[102px] px-6 sm:px-[46px] max-w-[1400px] mx-auto grid place-items-center md:grid-cols-2 1160px:grid-cols-10 gap-[30px]"
         data-aos="fade-up"
-        data-aos-mirror="true">
+        data-aos-mirror="false">
         <img
           className="border-3 border-CRed rounded-[14px] w-[300px] h-[213px] min-w-[270px] xs:min-w-[300px] min-h-[200px] xs:min-h-[213px] 1160px:col-span-3"
           src={product3}

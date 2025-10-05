@@ -11,7 +11,7 @@ const Beauty = () => {
     <section
       className="bg-cover bg-center py-7 sm:py-[50px] md:py-[102px] px-6 sm:px-[46px] max-w-[1400px] mx-auto"
       style={{ backgroundImage: `url(${BeautyBg})` }}>
-      <div className="flex" data-aos="fade-up" data-aos-mirror="true">
+      <div className="flex" data-aos="fade-up">
         <Effective
           className="md:absolute lg:relative"
           classNameP="hidden md:inline-block"
