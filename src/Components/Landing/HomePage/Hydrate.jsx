@@ -1,5 +1,5 @@
-import product3 from '../../../../assets/img/product3.png';
-import product4 from '../../../../assets/img/product4.png';
+import product3 from "../../../assets/img/product3.jpg";
+import product4 from "../../../assets/img/product4.jpg";
 
 const Hydrate = () => {
   return (

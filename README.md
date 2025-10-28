@@ -37,13 +37,13 @@ npm install tailwindcss @tailwindcss/vite
 Update `vite.config.js`:
 
 ```js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
- plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss()],
 });
 ```
 
@@ -79,7 +79,6 @@ Update your `src/index.css` and add this line **after** Tailwind directives:
 @plugin '../hero.ts'; /* Change according to your file path. */
 @source '../node_modules/@heroui/theme/dist*.{js,ts,jsx,tsx}'; /* Change according to your file path. */
 @custom-variant dark (&:is(.dark *));
-
 ```
 
 ---
@@ -89,13 +88,13 @@ Update your `src/index.css` and add this line **after** Tailwind directives:
 In `main.jsx`:
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './index.css';
-import { HeroUIProvider } from '@heroui/react';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { HeroUIProvider } from "@heroui/react";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HeroUIProvider>
       <App />
@@ -111,7 +110,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 Example:
 
 ```jsx
-import { Button } from '@heroui/react';
+import { Button } from "@heroui/react";
 
 function App() {
   return (

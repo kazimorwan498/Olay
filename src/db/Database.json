@@ -1,20 +1,20 @@
 {
-    "navLinkItems": [
-        {
-            "items": "Home",
-            "url": "/"
-        },
-        {
-            "items": "About Us",
-            "url": "/about"
-        },
-        {
-            "items": "Reviews",
-            "url": "/reviews"
-        },
-        {
-            "items": "Contact Us",
-            "url": "/contact"
-        }
-    ]
+  "navLinkItems": [
+    {
+      "items": "Home",
+      "url": "/"
+    },
+    {
+      "items": "About Us",
+      "url": "/about"
+    },
+    {
+      "items": "Reviews",
+      "url": "/reviews"
+    },
+    {
+      "items": "Contact Us",
+      "url": "/contact"
+    }
+  ]
 }
